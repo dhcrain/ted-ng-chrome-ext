@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+
+	"name": "TED-NG",
+	"description": "This extension toggles /local/ and /ted/module/",
+	"version": "0.2.2",
+	"page_action": {
+		"default_icon": "not_ted.png"
+	},
+	"background": {
+	  "scripts": ["background.js"]
+	},
+	"permissions": [
+	  "tabs"
+	],
+	"commands": {
+	  "switch": {
+		"suggested_key": {
+		  "default": "Ctrl+U",
+		  "mac": "Command+U"
+		},
+		"description": "Switch between local and ted/module for local dev of TED"
+	  },
+	  "switch_new_tab": {
+		"suggested_key": {
+		  "default": "Ctrl+Shift+U",
+		  "mac": "Command+Shift+U"
+		},
+		"description": "Open in a new tab"
+	  }
+	}
+  }
